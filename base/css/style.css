@@ -1,0 +1,396 @@
+/* -----------------------------------------------
+Basic Setting
+------------------------------------------------- */
+/*--- Font ---*/
+/*--- Path of Image ---*/
+/*--- Breakpoints Media Query ---*/
+/*--- Link ---*/
+body {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.7em;
+  color: #333; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 20px;
+  line-height: 1.5; }
+
+h1 {
+  font-size: 2.22222em; }
+
+h2 {
+  font-size: 1.88889em; }
+
+h3 {
+  font-size: 1.66667em; }
+
+h4 {
+  font-size: 1.33333em; }
+
+h5 {
+  font-size: 1.22222em; }
+
+h6 {
+  font-size: 1.22222em; }
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 1.66667em; }
+
+  h2 {
+    font-size: 1.33333em; }
+
+  h3 {
+    font-size: 1.11111em; }
+
+  h4 {
+    font-size: 1em; }
+
+  h5 {
+    font-size: 1em; }
+
+  h6 {
+    font-size: 1em; } }
+a {
+  word-break: break-all;
+  color: #5E9C26; }
+  a:hover, a:focus, a:active {
+    color: #D75C00;
+    text-decoration: none; }
+
+/* -----------------------------------------------
+Example Font Face
+------------------------------------------------- */
+/**
+ * Config $font-path: '../fonts/' in _var.scss
+ *
+ * Use font-face @mixin font-face($family,$src,$style,$weight);
+ *
+ * Example 4 font weight
+ * Font-weights: (Light: 300, Regular: 400, Medium: 500, SemiBold: 600, Bold: 700);
+ *
+ * @include font-face('Kanit', $font-path, $style: 300, $weight: normal);
+ * @include font-face('Kanit', $font-path, $style: 400, $weight: normal);
+ * @include font-face('Kanit', $font-path, $style: 500, $weight: normal);
+ * @include font-face('Kanit', $font-path, $style: 600, $weight: normal);
+ * @include font-face('Kanit', $font-path, $style: 700, $weight: normal);
+ */
+/*
+How to use font face
+------------------------------------------------- */
+/**
+ * .foo {
+ *     font-family: Kanit;
+ *     font-weight: 300; // Defualt
+ * }
+ * .bar {
+ *     font-family: Kanit;
+ *     font-weight: 600;
+ * }
+ */
+/* -----------------------------------------------
+Font Size Classes
+------------------------------------------------- */
+._fs-18 {
+  font-size: 1em; }
+
+._fs-20 {
+  font-size: 1.11111em; }
+
+._fs-22 {
+  font-size: 1.22222em; }
+
+._fs-24 {
+  font-size: 1.33333em; }
+
+._fs-26 {
+  font-size: 1.44444em; }
+
+._fs-28 {
+  font-size: 1.55556em; }
+
+._fs-30 {
+  font-size: 1.66667em; }
+
+._fs-32 {
+  font-size: 1.77778em; }
+
+._fs-34 {
+  font-size: 1.88889em; }
+
+._fs-36 {
+  font-size: 2em; }
+
+._fs-38 {
+  font-size: 2.11111em; }
+
+._fs-40 {
+  font-size: 2.22222em; }
+
+._fs-42 {
+  font-size: 2.33333em; }
+
+/*--- Line Height ---*/
+._lh1 {
+  line-height: 1em; }
+
+._lh1-2 {
+  line-height: 1.2em; }
+
+._lh1-4 {
+  line-height: 1.4em; }
+
+._lh1-5 {
+  line-height: 1.5em; }
+
+._lh1-7 {
+  line-height: 1.7em; }
+
+/* -----------------------------------------------
+Padding Classes
+------------------------------------------------- */
+/**
+ *
+ * pa = padding
+ * pt = padding-top
+ * pb = padding-bottom
+ * pl = padding-left
+ * pr = padding-right
+ *
+ */
+._pa-10 {
+  padding: 10px; }
+
+._pa-15 {
+  padding: 15px; }
+
+._pa-20 {
+  padding: 20px; }
+
+._pa-25 {
+  padding: 25px; }
+
+._pa-30 {
+  padding: 30px; }
+
+._pa-35 {
+  padding: 35px; }
+
+._pa-40 {
+  padding: 40px; }
+
+._pt-15 {
+  padding-top: 15px; }
+
+._pt-20 {
+  padding-top: 20px; }
+
+._pt-25 {
+  padding-top: 25px; }
+
+._pt-30 {
+  padding-top: 30px; }
+
+._pt-35 {
+  padding-top: 35px; }
+
+._pt-40 {
+  padding-top: 40px; }
+
+._pt-50 {
+  padding-top: 50px; }
+
+._pt-60 {
+  padding-top: 60px; }
+
+._pt-70 {
+  padding-top: 70px; }
+
+._pb-15 {
+  padding-bottom: 15px; }
+
+._pb-20 {
+  padding-bottom: 20px; }
+
+._pb-25 {
+  padding-bottom: 25px; }
+
+._pb-30 {
+  padding-bottom: 30px; }
+
+._pb-35 {
+  padding-bottom: 35px; }
+
+._pb-40 {
+  padding-bottom: 40px; }
+
+._pb-50 {
+  padding-bottom: 50px; }
+
+._pb-60 {
+  padding-bottom: 60px; }
+
+._pb-70 {
+  padding-bottom: 70px; }
+
+/* -----------------------------------------------
+Margin Classes
+------------------------------------------------- */
+/**
+ *
+ * ma = margin
+ * mt = margin-top
+ * mb = margin-bottom
+ * ml = margin-left
+ * mr = margin-right
+ *
+ */
+._ma-0 {
+  margin: 0; }
+
+._mt-0 {
+  margin-top: 0; }
+
+._mt-10 {
+  margin-top: 10px; }
+
+._mt-20 {
+  margin-top: 20px; }
+
+._mt-30 {
+  margin-top: 30px; }
+
+._mt-40 {
+  margin-top: 40px; }
+
+._mt-50 {
+  margin-top: 50px; }
+
+._mt-60 {
+  margin-top: 60px; }
+
+._mt-70 {
+  margin-top: 70px; }
+
+._mt-80 {
+  margin-top: 80px; }
+
+._mt-90 {
+  margin-top: 90px; }
+
+._mt-100 {
+  margin-top: 100px; }
+
+._mb-0 {
+  margin-bottom: 0; }
+
+._mb-10 {
+  margin-bottom: 10px; }
+
+._mb-20 {
+  margin-bottom: 20px; }
+
+._mb-30 {
+  margin-bottom: 30px; }
+
+._mb-40 {
+  margin-bottom: 40px; }
+
+._mb-50 {
+  margin-bottom: 50px; }
+
+._mb-60 {
+  margin-bottom: 60px; }
+
+._mb-70 {
+  margin-bottom: 70px; }
+
+._mb-80 {
+  margin-bottom: 80px; }
+
+._mb-90 {
+  margin-bottom: 90px; }
+
+._mb-100 {
+  margin-bottom: 100px; }
+
+._ml-10 {
+  margin-left: 10px; }
+
+._ml-20 {
+  margin-left: 20px; }
+
+._ml-70 {
+  margin-left: 70px; }
+
+/* -----------------------------------------------
+Border Radius  Classes
+------------------------------------------------- */
+._br-100 {
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */ }
+
+._br-2 {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */ }
+
+._br-3 {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */ }
+
+._br-4 {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */ }
+
+/* -----------------------------------------------
+Width Classes
+------------------------------------------------- */
+._w-100 {
+  width: 100px; }
+
+._w-120 {
+  width: 120px; }
+
+._w-140 {
+  width: 140px; }
+
+._w-160 {
+  width: 160px; }
+
+/* -----------------------------------------------
+Display Classes
+------------------------------------------------- */
+._block {
+  display: block !important; }
+
+._inline {
+  display: inline; }
+
+._inline-block {
+  display: inline-block; }
+
+._clearfix:before, ._clearfix:after {
+  content: " ";
+  display: table; }
+._clearfix:after {
+  clear: both; }
+
+/*----------------------------------
+Component : -
+Variants : -
+By : -
+----------------------------------*/
+
+/*# sourceMappingURL=style.css.map */
